@@ -1,4 +1,4 @@
-# Myna 🐦‍⬛ 🌿
+# Myna 🐦‍⬛
 Ever feel like code's punctuation is working against you? Frustrated when your `->` looks nothing like arrow, or `$`, `@`, `%` seem ever mismatched?
 Want to experience the beauty of ligatures without losing the simplicity of ASCII.
 Want a font which in which you could speak in Haskell and Perl at the same time without noise? We've got just the font for you!
@@ -62,3 +62,6 @@ SIL Open Font License
 
 ## Credits
 Myna is an improved version of an earlier font [Hera](https://github.com/sayyadirfanali/Hera.git) which was inspired by many many beautiful and popular open-source monospace fonts including Source Code Pro, Fira Mono, Inconsolata, Plex Mono, Office Code Pro, Anonymous Pro. More details can be found on the Hera repository.
+
+## Improvements
+Myna is a very simple font with no styling, no ligatures, and is designed to be used in every terminal. However, if you want the shape of some glyph to be changed or some new non-ASCII glyph to be added please feel free to open issues if you want to add some changes.
