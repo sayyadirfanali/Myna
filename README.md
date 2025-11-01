@@ -1,11 +1,11 @@
 # Myna
 Tired of squinting at uneven symbols in your code? Frustrated when your `->` looks nothing like arrow, or `$`, `@`, `%` seem mismatched?
-
 Want to experience the beauty of ligatures without losing the simplicity of ASCII.
-
 Want a font which in which you could learn Haskell and enjoy even Perl? We've got just the font for you!
 
-Myna is a monospace font which aims to bring harmony to your editor by treating symbols as first-class citizens.
+**Myna** (*Gracula religiosa* 🐦‍⬛) is a monospace font which aims to bring harmony to your editor by treating symbols as first-class citizens.
+
+<img src="images/hero.png" width="500">
 
 Myna is not designed from the scratch but steals some of the most beautiful features some of your favourite fonts to create a lovely experience.
 
@@ -18,9 +18,12 @@ Here is why Myna stands apart from other fonts:
 - **Language Agnostic**: clean sigils (`$s @a %h &f *x`) for Perl + elegant operators (`:: -> <$> >>=`) for Haskell + clear symbols (`-> ++ -- += << >>`) for C/C++
 
 ## Showcase
+<img src="images/Perl_dark.png"  width="800">
+<img src="images/Haskell_dark.png" width="800">
+
 | Language | Light | Dark |
 |----------|-------|------|
-|  **Perl**     |  <img  src="images/Perl-light.png"     width="300">  |  <img  src="images/Perl_dark.png"     width="300">  |
+|  **Perl**     |  <img  src="images/Perl_light.png"     width="300">  |  <img  src="images/Perl_dark.png"     width="300">  |
 |  **Haskell**  |  <img  src="images/Haskell_light.png"  width="300">  |  <img  src="images/Haskell_dark.png"  width="300">  |
 |  **C**        |  <img  src="images/C_light.png"        width="300">  |  <img  src="images/C_dark.png"        width="300">  |
 |  **Bash**     |  <img  src="images/Bash_light.png"     width="300">  |  <img  src="images/Bash_dark.png"     width="300">  |
