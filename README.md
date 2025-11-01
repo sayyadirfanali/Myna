@@ -1,7 +1,7 @@
-# Myna
-Tired of squinting at uneven symbols in your code? Frustrated when your `->` looks nothing like arrow, or `$`, `@`, `%` seem mismatched?
+# Myna 🐦‍⬛ 🌿
+Ever feel like code's punctuation is working against you? Frustrated when your `->` looks nothing like arrow, or `$`, `@`, `%` seem ever mismatched?
 Want to experience the beauty of ligatures without losing the simplicity of ASCII.
-Want a font which in which you could learn Haskell and enjoy even Perl? We've got just the font for you!
+Want a font which in which you could speak in Haskell and Perl at the same time without noise? We've got just the font for you!
 
 **Myna** (*Gracula religiosa* 🐦‍⬛) is a monospace font which aims to bring harmony to your editor by treating symbols as first-class citizens.
 
