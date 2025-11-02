@@ -18,9 +18,24 @@ Here is why Myna stands apart from other fonts:
 - **Language Agnostic**: clean sigils (`$s @a %h &f *x`) for Perl + elegant operators (`:: -> <$> >>=`) for Haskell + clear symbols (`-> ++ -- += << >>`) for C/C++
 
 ## Showcase
-<img src="images/Perl_dark.png"  width="1200">
-<img src="images/Haskell_light.png" width="1200">
-<img src="images/C_dark.png" width="1200">
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="images/Perl_dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/Perl_light.png">
+  <img alt="Perl" src="https://example.com/Perl_light.png">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="images/Haskell_dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/Haskell_light.png">
+  <img alt="Haskell" src="https://example.com/Haskell_light.png">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="images/C_dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/C_light.png">
+  <img alt="C" src="https://example.com/C_light.png">
+</picture>
+
 
 | Language | Light | Dark |
 |----------|-------|------|
