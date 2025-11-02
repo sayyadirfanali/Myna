@@ -1,5 +1,5 @@
 # Myna 🐦‍⬛
-Ever feel like code's punctuation is working against you? Frustrated when your `->` looks nothing like arrow, or `$`, `@`, `%` seem ever mismatched?
+Ever feel like typeface's symbols is working against you when coding? Frustrated when your `->` looks nothing like arrow, or `$`, `@`, `%` seem ever mismatched?
 Want to experience the beauty of ligatures without losing the simplicity of ASCII.
 Want a font which in which you could speak in Haskell and Perl at the same time without noise? We've got just the font for you!
 
