@@ -15,7 +15,7 @@ Here is why Myna stands apart from other fonts:
 - **Near-Perfect Alignment**: multi-character symbols like `->`, `>>=`, `=~`, `::` align seamlessly
 - **Balanced Weight**: symbols have just the right visual weight against your code
 - **Clear Distinction**: no more confusing `1 l I |` or `0 O o`
-- **Language Agnostic**: clean sigils (`$s @a %h &f *x`) for Perl + elegant operators (`:: -> <$> >>=`) for Haskell + clear symbols (`-> ++ -- += << >>`) for C/C++
+- **Language-Aware Design**: clean sigils (`$s @a %h &f *x`) for Perl + elegant operators (`:: -> <$> >>=`) for Haskell + clear symbols (`-> ++ -- += << >>`) for C/C++
 
 ## Showcase
 <picture>
