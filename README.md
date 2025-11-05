@@ -3,7 +3,8 @@
 ![License](https://img.shields.io/badge/license-OFL-success.svg?style=for-the-badge)
 
 Do you ever feel like your font treats symbols as second-class glyphs? Are you frustrated that `->` looks nothing like an arrow, and `$`, `@`, `%` seem ever mismatched?
-Want to experience the beauty of ligatures without losing the simplicity of ASCII.
+
+Want to experience the beauty of ligatures without losing the simplicity of ASCII?
 
 **Myna** (*Gracula religiosa* 🐦‍⬛) is a monospace font which aims to bring harmony to your editor by treating symbols as first-class glyphs alongside alphanumeric characters.
 
