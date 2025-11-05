@@ -1,18 +1,20 @@
-# Myna 🐦‍⬛
+![Myna](./images/hero.png)
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?style=for-the-badge)
+![License](https://img.shields.io/badge/license-OFL-success.svg?style=for-the-badge)
+
 Do you ever feel like your programmign font treats symbols as second-class glyphs? Are you frustrated that your `->` looks nothing like an arrow, or `$`, `@`, `%` seem ever mismatched?
 Want to experience the beauty of ligatures without losing the simplicity of ASCII.
 
-**Myna** (*Gracula religiosa* 🐦‍⬛) is a monospace font which aims to bring harmony to your editor by treating symbols as first-class citizens.
-
-<img src="images/hero.png">
+**Myna** (*Gracula religiosa* 🐦‍⬛) is a monospace font which aims to bring harmony to your editor by treating symbols as first-class glyphs alongside alphanumeric characters.
 
 ## Why Myna?
 Here is why Myna stands apart from other fonts:
 - **Symbol-First Design**: clear emphasis on ASCII symbols which are ubiquitous in programming languages
 - **Near-Perfect Alignment**: multi-character symbols like `->`, `>>=`, `=~`, `::` align seamlessly
 - **Balanced Weight**: symbols have just the right visual weight against your code
+- **Minimalist Forms**: geometric shapes for quotes and commas
 - **Clear Distinction**: no more confusing `1 l I |` or `0 O o`
-- **Language-Aware Design**: clean sigils (`$s @a %h &f *x`) for Perl + elegant operators (`:: -> <$> >>=`) for Haskell + clear symbols (`-> ++ -- += << >>`) for C/C++
+- **Language-Aware Design**: clean sigils for Perl + elegant operators for Haskell + clear symbols for C
 
 NB: Myna is a very simple font. It does **not** feature ligatures, or separate bold/italic styles currently.
 
@@ -75,7 +77,7 @@ fc-cache -v
 SIL Open Font License
 
 ## Credits
-Myna is an improved version of an earlier font [Hera](https://github.com/sayyadirfanali/Hera.git) which was inspired by many many beautiful and popular open-source monospace fonts including Source Code Pro, Fira Mono, Inconsolata, Plex Mono, Office Code Pro, Anonymous Pro. More details can be found on the Hera repository.
+Myna started out as [Hera](https://github.com/sayyadirfanali/Hera.git) which was a customised version of Source Code Pro but now has come a long way after stealing many beautiful designs from Fira Mono, Inconsolata, Plex Mono, Office Code Pro, Anonymous Pro.
 
-## Improvements
-Myna is a very simple font with no styling, no ligatures, and is designed to be used in every terminal. However, if you want the shape of some glyph to be changed or some new non-ASCII glyph to be added please feel free to open issues if you want to add some changes.
+## Contributions
+Myna is designed to be used in every terminal primarily with ASCII text. If you want the shape of some glyph to be changed or find Myna lacking in some non-ASCII glyph and want it to be added, please feel free to open issues. You can also contact me at irfan@irfanali.org.
