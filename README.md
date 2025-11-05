@@ -1,13 +1,10 @@
 # Myna 🐦‍⬛
-Ever feel like typeface's symbols is working against you when coding? Frustrated when your `->` looks nothing like arrow, or `$`, `@`, `%` seem ever mismatched?
+Do you ever feel like your programmign font treats symbols as second-class glyphs? Are you frustrated that your `->` looks nothing like an arrow, or `$`, `@`, `%` seem ever mismatched?
 Want to experience the beauty of ligatures without losing the simplicity of ASCII.
-Want a font which in which you could speak in Haskell and Perl at the same time without noise? We've got just the font for you!
 
 **Myna** (*Gracula religiosa* 🐦‍⬛) is a monospace font which aims to bring harmony to your editor by treating symbols as first-class citizens.
 
-<img src="images/hero.png" width="800">
-
-Myna is not designed from the scratch but steals some of the most beautiful features some of your favourite fonts to create a lovely experience.
+<img src="images/hero.png">
 
 ## Why Myna?
 Here is why Myna stands apart from other fonts:
@@ -16,6 +13,8 @@ Here is why Myna stands apart from other fonts:
 - **Balanced Weight**: symbols have just the right visual weight against your code
 - **Clear Distinction**: no more confusing `1 l I |` or `0 O o`
 - **Language-Aware Design**: clean sigils (`$s @a %h &f *x`) for Perl + elegant operators (`:: -> <$> >>=`) for Haskell + clear symbols (`-> ++ -- += << >>`) for C/C++
+
+NB: Myna is a very simple font. It does **not** feature ligatures, or separate bold/italic styles currently.
 
 ## Showcase
 <picture>

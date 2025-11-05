@@ -1,16 +1,23 @@
+offsets=(50)
+for ((i=1; i<=10; i++)); do
+  offsets+=($((offsets[i - 1] + 150)))
+done;
+
 magick \
-  -size 1000x1500 xc:"#0d0d0d" \
-  -font "Myna" \
-  -gravity north \
-  -fill "#EEEEEE"               -pointsize 96 -annotate   +0+80 "MYNA" \
-  -fill "hsl(0,  100%,  70%)"   -pointsize 72 -annotate   +0+200 "ABCDEFGHIJKLMNOPQRSTUVWXYZ" \
-  -fill "hsl(30, 100%, 70%)"    -pointsize 72 -annotate   +0+300 "abcdefghijklmnopqrstuvwxyz" \
-  -fill "hsl(60, 100%, 70%)"    -pointsize 72 -annotate   +0+400 "0 1 2 3 4 5 6 7 8 9" \
-  -fill "hsl(90, 100%, 70%)"    -pointsize 72 -annotate   +0+500 "[] {} () <> | \\\ ? ! #" \
-  -fill "hsl(120, 100%, 70%)"   -pointsize 72 -annotate   +0+600 "\` ' \" , . ; : ~ ^ _" \
-  -fill "hsl(150, 100%, 70%)"   -pointsize 72 -annotate   +0+700 "+ - = ++ -- += -= == !=" \
-  -fill "hsl(180, 100%, 70%)"   -pointsize 72 -annotate   +0+800 "\$s @a \%h &f *x =~ \$# @$ \%$" \
-  -fill "hsl(210,  100%, 70%)"  -pointsize 72 -annotate   +0+900 ":: -> => <$> >>= ^. \%~" \
-  -fill "hsl(240,  100%, 70%)"  -pointsize 72 -annotate   +0+1000 "0 O o  | 1 l I  `'  Z 2" \
-  -fill "hsl(270,  100%, 70%)"  -pointsize 72 -annotate   +0+1100 "→ $ £ € ¥ ₹ ₽ ←" \
-  $1
+    -size 2000x1800 xc:"#0d0d0d" \
+    -font "Myna" \
+    -gravity north \
+    -fill  "pink"            -pointsize  128  -annotate  +0+${offsets[0]}   "MYNA"                          \
+    -fill  "gold"            -pointsize  96   -annotate  +0+${offsets[1]}   "ABCDEFGHIJKLMNOPQRSTUVWXYZ"    \
+    -fill  "lightgreen"      -pointsize  96   -annotate  +0+${offsets[2]}   "abcdefghijklmnopqrstuvwxyz"    \
+    -fill  "mediumpurple"    -pointsize  96   -annotate  +0+${offsets[3]}   "0 1 2 3 4 5 6 7 8 9"           \
+    -fill  "cyan"            -pointsize  96   -annotate  +0+${offsets[4]}   "[] {} () <> | \\\ ? ! #"       \
+    -fill  "turquoise"          -pointsize  96   -annotate  +0+${offsets[5]}   "\` ' \" , . ; : ~ ^ _"         \
+    -fill  "hotpink"         -pointsize  96   -annotate  +0+${offsets[6]}   "+ - = ++ -- += -= == !="       \
+    -fill  "lightskyblue"    -pointsize  96   -annotate  +0+${offsets[7]}   "\$s @a \%h &f *x  =~"          \
+    -fill  "violet"          -pointsize  96   -annotate  +0+${offsets[8]}   ":: -> => <$>  >>=  ^. \%~"     \
+    -fill  "goldenrod"       -pointsize  96   -annotate  +0+${offsets[9]}   "$ £ € ¥ ₹ ₽"                   \
+    -fill  "limegreen"       -pointsize  96   -annotate  +0+${offsets[10]}  "0 O o | 1 l I | \` ' \" | Z 2" \
+    $1
+
+
