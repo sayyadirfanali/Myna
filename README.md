@@ -79,7 +79,13 @@ cp Myna.otf ~/Library/Fonts/
 SIL Open Font License, Version 1.1
 
 ## Credits
-Myna started out as [Hera](https://github.com/sayyadirfanali/Hera.git) which was a customised version of Source Code Pro but now has come a long way after stealing many beautiful designs from Fira Mono, Inconsolata, Plex Mono, Office Code Pro, Anonymous Pro.
+Myna started out as [Hera](https://github.com/sayyadirfanali/Hera.git) which was a customised version of Source Code Pro but now has come a long way after stealing many beautiful designs from Fira Mono, Inconsolata, Plex Mono, Office Code Pro, Anonymous Pro. Detailed credits could be found in the Hera repository.
 
-## Contributions
-Myna is designed to be used universally in every kind of terminal and editor. If you find it lacking in some non-ASCII glyph and want it to be added, please feel free to open issues. You can also contact me at irfan@irfanali.org.
+Code banner and illustrations were produced using ImageMagick and [Ray.so](https://ray.so).
+
+## Future
+Myna is designed to be used universally in every kind of terminal and editor. I've tried reasonable subset of non-ASCII glyphs (mostly related to geometrical and mathematical characters). However, I'm considering expanding it based on community interest and would welcome contributions in these areas:
+- Bug Reports: spacing and kerning issues, rendering problems, unavailable/incorrect glyphs
+- Feature Requests: Suggest new glyphs or features via GitHub Issues
+
+Please feel free to open issues and also contact me at irfan@irfanali.org.
