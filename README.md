@@ -50,7 +50,6 @@ NB: Myna is designed to be a simple font. The current release is a single weight
 |  **Clojure**  |  <img  src="images/Clojure_light.png"  width="500">  |  <img  src="images/Clojure_dark.png"  width="500">  |
 |  **Erlang**   |  <img  src="images/Erlang_light.png"   width="500">  |  <img  src="images/Erlang_dark.png"   width="500">  |
 |  **OCaml**    |  <img  src="images/OCaml_light.png"    width="500">  |  <img  src="images/OCaml_dark.png"    width="500">  |
-|  **Ruby**     |  <img  src="images/Ruby_light.png"     width="500">  |  <img  src="images/Ruby_dark.png"     width="500">  |
 |  **Rust**     |  <img  src="images/Rust_light.png"     width="500">  |  <img  src="images/Rust_dark.png"     width="500">  |
 |  **LaTeX**    |  <img  src="images/LaTeX_light.png"    width="500">  |  <img  src="images/LaTeX_dark.png"    width="500">  |
 |  **HTML**     |  <img  src="images/HTML_light.png"     width="500">  |  <img  src="images/HTML_dark.png"     width="500">  |
