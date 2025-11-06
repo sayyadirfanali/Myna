@@ -4,7 +4,7 @@ for ((i=1; i<=10; i++)); do
 done;
 
 magick \
-    -size 2000x1800 xc:"#111111" \
+    -size 2000x1800 xc:"#191919" \
     -font "Myna" \
     -strokewidth 1.2 \
     -gravity north \
