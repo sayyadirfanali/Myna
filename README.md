@@ -87,6 +87,6 @@ Code banner and illustrations were produced using ImageMagick and [Ray.so](https
 ## Future
 Myna is designed to be used universally in every kind of terminal and editor. I've tried to include a reasonable subset of non-ASCII glyphs (mostly geometrical and mathematical characters). However, I'm considering expanding it based on community interest and would welcome contributions in these areas:
 - Bug Reports: spacing and kerning issues, rendering problems, unavailable/incorrect glyphs
-- Feature Requests: Suggest new glyphs or features via GitHub Issues
+- Feature Requests: suggest new glyphs or features via GitHub Issues
 
 Please feel free to open issues and also contact me at irfan@irfanali.org.
