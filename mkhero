@@ -1,0 +1,21 @@
+offsets=(50)
+for ((i=1; i<=10; i++)); do
+  offsets+=($((offsets[i - 1] + 150)))
+done;
+
+magick \
+    -size 2000x1800 radial-gradient:"#112222"-"#111111" \
+    -font "Myna" \
+    -strokewidth 1.2 \
+    -gravity north \
+    -fill  "pink"           -stroke  "pink"           -pointsize  128  -annotate  +0+${offsets[0]}   "MYNA"                          \
+    -fill  "yellow"         -stroke  "yellow"         -pointsize  96   -annotate  +0+${offsets[1]}   "ABCDEFGHIJKLMNOPQRSTUVWXYZ"    \
+    -fill  "springgreen"    -stroke  "springgreen"    -pointsize  96   -annotate  +0+${offsets[2]}   "abcdefghijklmnopqrstuvwxyz"    \
+    -fill  "deepskyblue"    -stroke  "deepskyblue"    -pointsize  96   -annotate  +0+${offsets[3]}   "0 1 2 3 4 5 6 7 8 9"           \
+    -fill  "hotpink"        -stroke  "hotpink"        -pointsize  96   -annotate  +0+${offsets[4]}   "[] {} () <> | \\\ ? ! #"       \
+    -fill  "cyan"           -stroke  "cyan"           -pointsize  96   -annotate  +0+${offsets[5]}   "\` ' \" , . ; : ~ ^ _"         \
+    -fill  "springgreen"    -stroke  "springgreen"    -pointsize  96   -annotate  +0+${offsets[6]}   "+ - = ++ -- += -= == !="       \
+    -fill  "aqua"           -stroke  "aqua"           -pointsize  96   -annotate  +0+${offsets[7]}   "\$s @a \%h &f *x =~"           \
+    -fill  "violet"         -stroke  "violet"         -pointsize  96   -annotate  +0+${offsets[8]}   ":: -> => <$> >>= ^. \%~"       \
+    -fill  "coral"          -stroke  "coral"          -pointsize  96   -annotate  +0+${offsets[9]}   "$ £ € ¥ ₹ ₽"                   \
+    -fill  "limegreen"      -stroke  "limegreen"      -pointsize  96   -annotate  +0+${offsets[10]}  "0 O o | 1 l I | \` ' \" | Z 2"  $1
