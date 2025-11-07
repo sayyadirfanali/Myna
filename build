@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+fontforge -lang=ff -c 'Open($1); Reencode("unicode"); Generate($1:r + ".otf", "", 0x14)' "$(pwd)/Myna.sfd"
+cp "$(pwd)/Myna.otf" ~/.fonts/.
