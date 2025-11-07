@@ -40,6 +40,7 @@ NB: Myna is designed to be a simple font. The current release is a single weight
   <img alt="C" src="https://example.com/C_light.png">
 </picture>
 
+Please click on the image to view it in full in a new tab.
 
 | Language | Light | Dark |
 |----------|-------|------|
