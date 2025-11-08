@@ -56,9 +56,9 @@ Please click on the image to view it in full in a new tab.
 |  **HTML**     |  <img  src="images/HTML_light.png"     width="500">  |  <img  src="images/HTML_dark.png"     width="500">  |
 |  **SQL**      |  <img  src="images/SQL_light.png"      width="500">  |  <img  src="images/SQL_dark.png"      width="500">  |
 
-Here is a comparison of popular glyph combinations in Myna with other popular non-ligature monospace fonts. Note that these are fonts which don't use ligatures. More smooth looks can be achieved using ligatured fonts (at the cost of some minor inconveniences while installing and typing).
+Here is a comparison of popular glyph combinations in Myna with other popular non-ligature monospace fonts. Note that these are fonts which don't use ligatures. As is clear, Myna tries to achieve the smooth look of ligatures but retains the simplicity of ASCII.
 
-![comparison]("images/comp.png")
+![Comparison](images/comp.png)
 
 ## Installation
 ### Linux
