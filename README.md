@@ -29,18 +29,16 @@ NB: Myna is designed to be a simple font. The current release is a single weight
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="images/Haskell_dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/Haskell_light.png">
-  <img alt="Haskell" src="https://example.com/Haskell_light.png">
-</picture>
-
-<picture>
   <source media="(prefers-color-scheme: dark)"  srcset="images/C_dark.png">
   <source media="(prefers-color-scheme: light)" srcset="images/C_light.png">
   <img alt="C" src="https://example.com/C_light.png">
 </picture>
 
-Please click on the image to view it in full in a new tab.
+Here is a comparison of popular glyph combinations in Myna with other popular non-ligature monospace fonts. Note that these are fonts which don't use ligatures. As is clear, Myna tries to achieve the smooth look of ligatures but retains the simplicity of ASCII.
+
+![Comparison](images/comp.png)
+
+Please click on the images below to view it in full in a new tab.
 
 | Language | Light | Dark |
 |----------|-------|------|
@@ -55,10 +53,6 @@ Please click on the image to view it in full in a new tab.
 |  **LaTeX**    |  <img  src="images/LaTeX_light.png"    width="500">  |  <img  src="images/LaTeX_dark.png"    width="500">  |
 |  **HTML**     |  <img  src="images/HTML_light.png"     width="500">  |  <img  src="images/HTML_dark.png"     width="500">  |
 |  **SQL**      |  <img  src="images/SQL_light.png"      width="500">  |  <img  src="images/SQL_dark.png"      width="500">  |
-
-Here is a comparison of popular glyph combinations in Myna with other popular non-ligature monospace fonts. Note that these are fonts which don't use ligatures. As is clear, Myna tries to achieve the smooth look of ligatures but retains the simplicity of ASCII.
-
-![Comparison](images/comp.png)
 
 ## Installation
 ### Linux
