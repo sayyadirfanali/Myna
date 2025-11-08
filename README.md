@@ -1,4 +1,4 @@
-![Myna](./images/hero.png)
+![Myna](images/hero.png)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-OFL-success.svg?style=for-the-badge)
 
@@ -58,7 +58,7 @@ Please click on the image to view it in full in a new tab.
 
 Here is a comparison of popular glyph combinations in Myna with other popular non-ligature monospace fonts. Note that these are fonts which don't use ligatures. More smooth looks can be achieved using ligatured fonts (at the cost of some minor inconveniences while installing and typing).
 
-<img alt="comparison" src="images/comp.png"></img>
+![comparison]("images/comp.png")
 
 ## Installation
 ### Linux
