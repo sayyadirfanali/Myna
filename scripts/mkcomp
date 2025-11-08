@@ -4,14 +4,14 @@ use strict;
 use warnings;
 
 my $symbols = [
-  { "pos" => 400,   "sym" => "->" },
-  { "pos" => 600,   "sym" => "=>" },
-  { "pos" => 800,   "sym" => "~>" },
-  { "pos" => 1000,   "sym" => "<>" },
-  { "pos" => 1200,  "sym" => "=~" },
-  { "pos" => 1400,  "sym" => "<\$>" },
-  { "pos" => 1600,  "sym" => "<*>" },
-  { "pos" => 1800,  "sym" => ">>=" },
+  { "pos" => 200,   "sym" => "->" },
+  { "pos" => 400,   "sym" => "=>" },
+  { "pos" => 600,   "sym" => "~>" },
+  { "pos" => 800,   "sym" => "<>" },
+  { "pos" => 1000,  "sym" => "=~" },
+  { "pos" => 1200,  "sym" => "<\$>" },
+  { "pos" => 1400,  "sym" => "<*>" },
+  { "pos" => 1600,  "sym" => ">>=" },
 ];
 
 my $fonts = [
@@ -29,22 +29,17 @@ my $fonts = [
 sub f {
   my ($x, $s) = @_;
   return join(" ",
-    "-pointsize 64",
-    "-fill white -stroke white",
+    "-pointsize 48",
+    "-fill black",
     (map { "-font \"$_->{name}\" -annotate +$x+$_->{pos} \"$s\"" } $fonts->@*),
-    "-fill cyan -stroke cyan -font \"Myna\" -annotate +$x+1050 \"$s\""
+    "-fill crimson -font \"Myna\" -annotate +$x+1020 \"$s\"",
   );
 }
 
 system (join(" ",
     "magick",
-    "-size 2000x1200 xc:black",
+    "-size 2000x1200 xc:#fefefe",
     "-gravity northwest",
-    "-pointsize 64 -strokewidth 1.2 -fill white -stroke white -font \"Inter-Regular\"",
-    join(' ', map { "-annotate +80+$_->{pos} \"@{[$_->{name} =~ s/-.*//r]}\"" } $fonts->@*),
-    '-fill cyan -stroke cyan -annotate +80+1050 "Myna"',
-
     join (' ', map { f($_->{pos}, $_->{sym}) } $symbols->@*),
-
     $ARGV[0]
 ));

@@ -15,7 +15,7 @@ my $text = [
 
 system(join(' ',
   "magick",
-  "-size 2000x2200 xc:\"#1A1A1A\" -gravity north -pointsize 128 -font Myna -strokewidth 1.2",
+  "-size 2000x2200 xc:\"#1a1a1a\" -gravity north -pointsize 128 -font Myna -strokewidth 1.2",
   (map { "-fill $_->{col} -stroke $_->{col} -annotate +0+$_->{pos} \"$_->{string}\"" } $text->@*),
   $ARGV[0]
 ))
