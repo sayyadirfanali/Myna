@@ -34,7 +34,7 @@ NB: Myna is designed to be a simple font. The current release is a single weight
   <img alt="C" src="https://example.com/C_light.png">
 </picture>
 
-Here is a comparison of popular glyph combinations in Myna with other popular non-ligature monospace fonts. Note that these are fonts which don't use ligatures. As is clear, Myna tries to achieve the smooth look of ligatures but retains the simplicity of ASCII.
+Here is a comparison of popular glyph combinations in Myna with other popular non-ligature monospace fonts. Note that these are fonts which don't use ligatures. The names of the fonts could be found in the script ![mkcomp](scripts/mkcomp). Myna tries to emulate the smooth look of ligatures but also retains the simplicity of ASCII.
 
 ![Comparison](images/comp.png)
 
