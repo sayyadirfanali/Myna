@@ -1,4 +1,4 @@
-![Myna](images/hero.png)
+![Myna](./images/hero.png)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-OFL-success.svg?style=for-the-badge)
 
@@ -36,7 +36,7 @@ NB: Myna is designed to be a simple font. The current release is a single weight
 
 Here is a comparison of popular glyph combinations in Myna with other popular non-ligature monospace fonts. Note that these are fonts which don't use ligatures. The names of the fonts could be found in the script ![mkcomp](scripts/mkcomp). Myna tries to emulate the smooth look of ligatures but also retains the simplicity of ASCII.
 
-![Comparison](images/comp.png)
+![Comparison](./images/comp.png)
 
 Please click on the images below to view it in full in a new tab.
 
