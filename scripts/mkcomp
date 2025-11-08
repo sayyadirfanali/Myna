@@ -1,0 +1,50 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+my $symbols = [
+  { "pos" => 400,   "sym" => "->" },
+  { "pos" => 600,   "sym" => "=>" },
+  { "pos" => 800,   "sym" => "~>" },
+  { "pos" => 1000,   "sym" => "<>" },
+  { "pos" => 1200,  "sym" => "=~" },
+  { "pos" => 1400,  "sym" => "<\$>" },
+  { "pos" => 1600,  "sym" => "<*>" },
+  { "pos" => 1800,  "sym" => ">>=" },
+];
+
+my $fonts = [
+  { "pos" => 100, "name" => "Cascadia-Mono-Regular" },
+  { "pos" => 200, "name" => "Source-Code-Pro-Regular" },
+  { "pos" => 300, "name" => "Dejavu-Sans-Mono" },
+  { "pos" => 400, "name" => "Jetbrains-Mono" },
+  { "pos" => 500, "name" => "Iosevka" },
+  { "pos" => 600, "name" => "Ubuntu-Mono" },
+  { "pos" => 700, "name" => "Fira-Mono-Regular" },
+  { "pos" => 800, "name" => "Liberation-Mono" },
+  { "pos" => 900, "name" => "Roboto-Mono" }
+];
+
+sub f {
+  my ($x, $s) = @_;
+  return join(" ",
+    "-pointsize 64",
+    "-fill white -stroke white",
+    (map { "-font \"$_->{name}\" -annotate +$x+$_->{pos} \"$s\"" } $fonts->@*),
+    "-fill cyan -stroke cyan -font \"Myna\" -annotate +$x+1050 \"$s\""
+  );
+}
+
+system (join(" ",
+    "magick",
+    "-size 2000x1200 xc:black",
+    "-gravity northwest",
+    "-pointsize 64 -strokewidth 1.2 -fill white -stroke white -font \"Inter-Regular\"",
+    join(' ', map { "-annotate +80+$_->{pos} \"@{[$_->{name} =~ s/-.*//r]}\"" } $fonts->@*),
+    '-fill cyan -stroke cyan -annotate +80+1050 "Myna"',
+
+    join (' ', map { f($_->{pos}, $_->{sym}) } $symbols->@*),
+
+    $ARGV[0]
+));
