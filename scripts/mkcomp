@@ -18,28 +18,36 @@ my $fonts = [
   { "pos" => 100, "name" => "Cascadia-Mono-Regular" },
   { "pos" => 200, "name" => "Source-Code-Pro-Regular" },
   { "pos" => 300, "name" => "Dejavu-Sans-Mono" },
-  { "pos" => 400, "name" => "Jetbrains-Mono" },
+  { "pos" => 400, "name" => "JetBrains-Mono-Regular" },
   { "pos" => 500, "name" => "Iosevka" },
   { "pos" => 600, "name" => "Ubuntu-Mono" },
   { "pos" => 700, "name" => "Fira-Mono-Regular" },
   { "pos" => 800, "name" => "Liberation-Mono" },
-  { "pos" => 900, "name" => "Roboto-Mono" }
+  { "pos" => 900, "name" => "Roboto-Mono-Regular" }
 ];
 
 sub f {
-  my ($x, $s) = @_;
+  my ($x, $s, $c, $a) = @_;
   return join(" ",
-    "-pointsize 48",
-    "-fill black",
+    "-pointsize 64",
+    "-fill " . $c . " ",
     (map { "-font \"$_->{name}\" -annotate +$x+$_->{pos} \"$s\"" } $fonts->@*),
-    "-fill crimson -font \"Myna\" -annotate +$x+1020 \"$s\"",
+    "-fill " . $a . " -font \"Myna\" -annotate +@{[$x + 10]}+1000 \"$s\"",
   );
 }
 
 system (join(" ",
     "magick",
-    "-size 2000x1200 xc:#fefefe",
+    "-size 2000x1200 xc:black",
     "-gravity northwest",
-    join (' ', map { f($_->{pos}, $_->{sym}) } $symbols->@*),
+    join (' ', map { f($_->{pos}, $_->{sym}, "white", "cyan") } $symbols->@*),
     $ARGV[0]
+));
+
+system (join(" ",
+    "magick",
+    "-size 2000x1200 xc:white",
+    "-gravity northwest",
+    join (' ', map { f($_->{pos}, $_->{sym}, "black", "crimson") } $symbols->@*),
+    $ARGV[1]
 ));

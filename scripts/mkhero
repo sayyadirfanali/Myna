@@ -1,21 +1,41 @@
 #!/usr/bin/perl
 
-my $text = [
+my $dark = [
   {"col" => "yellow",       "pos" => 100,  "string" => 'MYNA'},
   {"col" => "cyan",         "pos" => 300,  "string" => 'Lorem ipsum dolor sit amet'},
   {"col" => "violet",       "pos" => 500,  "string" => '0 1 2 3 4 5 6 7 8 9'},
-  {"col" => "hotpink",      "pos" => 700,  "string" => '[] {} () <> | \\\ ? ! #'},
+  {"col" => "hotpink",      "pos" => 700,  "string" => '[] {} () <> | / \\\\\ ? ! #'},
   {"col" => "cyan",         "pos" => 900,  "string" => '\` \' \" , . ; : ~ ^ _'},
-  {"col" => "springgreen",  "pos" => 1100,  "string" => '+ - = ++ -- += -= == !='},
+  {"col" => "springgreen",  "pos" => 1100, "string" => '+ - = ++ -- += -= == !='},
   {"col" => "aqua",         "pos" => 1300, "string" => '\$s @a \%h &f *x =~'},
   {"col" => "violet",       "pos" => 1500, "string" => ':: -> => <$> >>= ^. \%~'},
   {"col" => "coral",        "pos" => 1700, "string" => '$ £ € ¥ ₹ ₽'},
   {"col" => "limegreen",    "pos" => 1900, "string" => '0 O o | 1 l I | \` \' \" | Z 2'}
 ];
 
+my $light = [
+  {"col" => "deeppink",     "pos" => 100,  "string" => 'MYNA'},
+  {"col" => "royalblue",    "pos" => 300,  "string" => 'Lorem ipsum dolor sit amet'},
+  {"col" => "darkviolet",   "pos" => 500,  "string" => '0 1 2 3 4 5 6 7 8 9'},
+  {"col" => "deeppink",     "pos" => 700,  "string" => '[] {} () <> | / \\\\\ ? ! #'},
+  {"col" => "teal",         "pos" => 900,  "string" => '\` \' \" , . ; : ~ ^ _'},
+  {"col" => "forestgreen",  "pos" => 1100, "string" => '+ - = ++ -- += -= == !='},
+  {"col" => "steelblue",    "pos" => 1300, "string" => '\$s @a \%h &f *x =~'},
+  {"col" => "purple",       "pos" => 1500, "string" => ':: -> => <$> >>= ^. \%~'},
+  {"col" => "crimson",      "pos" => 1700, "string" => '$ £ € ¥ ₹ ₽'},
+  {"col" => "green",        "pos" => 1900, "string" => '0 O o | 1 l I | \` \' \" | Z 2'}
+];
+
 system(join(' ',
   "magick",
-  "-size 2000x2200 xc:\"#1a1a1a\" -gravity north -pointsize 128 -font Myna -strokewidth 1.2",
-  (map { "-fill $_->{col} -stroke $_->{col} -annotate +0+$_->{pos} \"$_->{string}\"" } $text->@*),
+  "-size 2000x2200 xc:black -gravity north -pointsize 128 -font Myna -strokewidth 1.2",
+  (map { "-fill $_->{col} -stroke $_->{col} -annotate +0+$_->{pos} \"$_->{string}\"" } $dark->@*),
   $ARGV[0]
-))
+));
+
+system(join(' ',
+  "magick",
+  "-size 2000x2200 xc:white -gravity north -pointsize 128 -font Myna -strokewidth 1.2",
+  (map { "-fill $_->{col} -stroke $_->{col} -annotate +0+$_->{pos} \"$_->{string}\"" } $light->@*),
+  $ARGV[1]
+));
