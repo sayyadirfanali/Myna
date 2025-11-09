@@ -1,4 +1,8 @@
-![Myna](./images/hero.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="images/hero_dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/hero_light.png">
+  <img alt="Perl" src="https://example.com/hero_light.png">
+</picture>
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-OFL-success.svg?style=for-the-badge)
 
@@ -36,7 +40,11 @@ NB: Myna is designed to be a simple font. The current release is a single weight
 
 Here is a comparison between some popular monospace fonts with Myna (at the bottom in red). The list of the fonts used could be found in the script [mkcomp](scripts/mkcomp). Myna tries to emulate the smooth look of ligatures but also retains the simplicity of ASCII.
 
-![Comparison](./images/comp.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="images/comp_dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/comp_light.png">
+  <img alt="Perl" src="https://example.com/comp_light.png">
+</picture>
 
 Please click on the images below to view it in full in a new tab.
 
