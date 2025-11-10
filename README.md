@@ -14,7 +14,7 @@ Want to experience the beauty of ligatures without losing the simplicity of ASCI
 **Myna** (*Gracula religiosa* 🐦‍⬛) is a monospace font which aims to bring harmony to your editor by treating symbols as first-class glyphs alongside alphanumeric characters.
 
 ## Why Myna?
-Myna was borne out of a need to scratch a persistent typographical itch. While I've tried many otherwise well-crafted monospace fonts, I always found myself wanting to tweak a glyph here or adjust a shape there. After developing Myna and using it almost exclusively in my professional and personal work, I'm sharing it as a small contribution to the wonderful community of monospace typography enthusiasts.
+Myna was born of a need to scratch a persistent typographical itch. While I've tried many otherwise well-crafted monospace fonts, I always found myself wanting to tweak a glyph here or adjust a shape there. After developing Myna and using it almost exclusively in my professional and personal work, I'm sharing it as a small contribution to the wonderful community of monospace typography enthusiasts.
 
 Here are a few of its attractive features that might make it your next favourite monospace font:
 - **Symbol-First Design**: clear emphasis on ASCII symbols which are ubiquitous in programming languages
