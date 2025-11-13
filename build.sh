@@ -1,4 +1,3 @@
 python build.py \
-&& cp Myna-alt_l.otf ~/.fonts/. \
 && fontforge -script ~/bin/fontpatcher/font-patcher --complete Myna.otf && mv MynaNerdFont-Regular.otf Myna-NerdFont.otf \
-&& fontforge -script ~/bin/fontpatcher/font-patcher --complete Myna-alt_l.otf && mv MynaNerdFont-Regular.otf Myna-NerdFont-alt_l.otf
+# && zip -r Myna_v$1.zip *.otf *.ttf OFL.txt README.txt
