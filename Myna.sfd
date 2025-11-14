@@ -1,9 +1,9 @@
 SplineFontDB: 3.2
-FontName: Myna
-FullName: Myna
+FontName: Myna-Regular
+FullName: Myna Regular
 FamilyName: Myna
 Weight: Regular
-Copyright: 
+Copyright: Copyright (c) 2025 Irfan Ali
 Version: 1.0
 ItalicAngle: 0
 UnderlinePosition: -100
@@ -15,7 +15,8 @@ sfntRevision: 0x000209ba
 LayerCount: 2
 Layer: 0 0 "Back" 1
 Layer: 1 0 "Fore" 0
-XUID: [1021 748 -90522492 6487900]
+XUID: [1021 748 -90522492 9009583]
+UseUniqueID: 1
 BaseHoriz: 2 'ideo' 'romn'
 BaseScript: 'DFLT' 1  -170 0
 BaseScript: 'cyrl' 1  -170 0
@@ -27,7 +28,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1610046839
-ModificationTime: 1763056705
+ModificationTime: 1763123033
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -59,7 +60,7 @@ OS2StrikeYSize: 50
 OS2StrikeYPos: 291
 OS2CapHeight: 660
 OS2XHeight: 486
-OS2Vendor: 'ADBO'
+OS2Vendor: 'IRFN'
 OS2CodePages: 6000019f.00000000
 OS2UnicodeRanges: 200002f7.02003803.00000000.00000000
 Lookup: 6 0 0 "'ccmp' Glyph Composition/Decomposition lookup 0" { "'ccmp' Glyph Composition/Decomposition lookup 0 contextual 0"  "'ccmp' Glyph Composition/Decomposition lookup 0 contextual 1"  "'ccmp' Glyph Composition/Decomposition lookup 0 contextual 2"  } ['ccmp' ('DFLT' <'dflt' > 'cyrl' <'SRB ' 'dflt' > 'grek' <'dflt' > 'latn' <'ATH ' 'NSM ' 'SKS ' 'dflt' > ) ]
@@ -169,7 +170,7 @@ ChainPos2: coverage "'ccmp' Glyph Composition/Decomposition lookup 0 contextual 
   BCoverage: 17 b d f h i j k l t
  0
 EndFPST
-LangName: 1033 "" "" "" "FontForge 2.0: Myna" "" "Version 1.0" "" "" "" "" "" "" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL. This Font Software is distributed on an +IBgA-AS IS+IBkA BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software." "http://scripts.sil.org/OFL"
+LangName: 1033 "" "" "" "" "" "Version 1.0" "" "" "" "" "" "" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL. This Font Software is distributed on an +IBgA-AS IS+IBkA BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software." "http://scripts.sil.org/OFL"
 DesignSize: 100
 Encoding: UnicodeFull
 UnicodeInterp: none
