@@ -2,8 +2,10 @@
 import fontforge
 
 font = fontforge.open("Myna.sfd")
-font.generate("Myna.otf")
-font.generate("Myna.ttf")
+font.mergeFeature("Myna.fea")
+
+font.generate("fonts/Myna.otf")
+font.generate("fonts/Myna.ttf")
 
 if "alt_l" in font:
     font.selection.select("alt_l")
@@ -11,6 +13,6 @@ if "alt_l" in font:
     font.selection.select("l")
     font.paste()
 
-font.generate("Myna-alt_l.otf")
-font.generate("Myna-alt_l.ttf")
+font.generate("fonts/Myna-AltL.otf")
+font.generate("fonts/Myna-AltL.ttf")
 font.close()

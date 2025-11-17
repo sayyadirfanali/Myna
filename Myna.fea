@@ -1,0 +1,12 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+feature kern {
+    pos uni003A <0 100 0 0> uni002A;
+    pos uni003A <0 100 0 0> uni002D;
+    pos uni003A <0 100 0 0> uni003D;
+} kern;
+
+feature calt {
+    sub uni007C' uni003E by alt_bar;
+} calt;
