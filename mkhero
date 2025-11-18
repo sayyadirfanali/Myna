@@ -30,12 +30,12 @@ system(join(' ',
   "magick",
   "-size 2000x2200 xc:black -gravity north -pointsize 128 -font Myna -strokewidth 2",
   (map { "-fill white -stroke white -annotate +0+$_->{pos} \"$_->{string}\"" } $dark->@*),
-  $ARGV[0]
+  quotemeta($ARGV[0])
 ));
 
 system(join(' ',
   "magick",
   "-size 2000x2200 xc:white -gravity north -pointsize 128 -font Myna -strokewidth 2",
   (map { "-fill black -stroke black -annotate +0+$_->{pos} \"$_->{string}\"" } $light->@*),
-  $ARGV[1]
+  quotemeta($ARGV[1])
 ));

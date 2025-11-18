@@ -41,7 +41,7 @@ system (join(" ",
     "-size 2000x1200 xc:black",
     "-gravity northwest",
     join (' ', map { f($_->{pos}, $_->{sym}, "white", "cyan") } $symbols->@*),
-    $ARGV[0]
+    quotemeta($ARGV[0])
 ));
 
 system (join(" ",
@@ -49,5 +49,5 @@ system (join(" ",
     "-size 2000x1200 xc:white",
     "-gravity northwest",
     join (' ', map { f($_->{pos}, $_->{sym}, "black", "crimson") } $symbols->@*),
-    $ARGV[1]
+    quotemeta($ARGV[1])
 ));
