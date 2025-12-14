@@ -8,5 +8,7 @@ feature kern {
 } kern;
 
 feature calt {
+    ignore sub uni003C uni007C' uni003E;
+
     sub uni007C' uni003E by alt_bar;
 } calt;

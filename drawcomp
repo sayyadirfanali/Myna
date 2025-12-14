@@ -32,7 +32,7 @@ sub f {
     "-pointsize 64",
     "-fill " . $c . " ",
     (map { "-font \"$_->{name}\" -annotate +$x+$_->{pos} \"$s\"" } $fonts->@*),
-    "-fill " . $a . " -font \"Myna\" -annotate +@{[$x + 10]}+1000 \"$s\"",
+    "-fill " . $a . " -font \"Myna-Regular\" -annotate +@{[$x + 10]}+1000 \"$s\"",
   );
 }
 

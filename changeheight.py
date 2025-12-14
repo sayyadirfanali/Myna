@@ -1,6 +1,6 @@
 import fontforge
 
-font = fontforge.open("./Myna.sfd")
+font = fontforge.open("Myna-Regular.sfd")
 
 ascent  = font.ascent
 descent = font.descent
@@ -23,5 +23,5 @@ font.os2_typodescent = font.hhea_descent
 font.os2_winascent = ascent # can increase or decrease this if clipped 
 font.os2_windescent = descent
 
-font.save("Myna.sfd")
+font.save("Myna-Regular.sfd")
 font.close()

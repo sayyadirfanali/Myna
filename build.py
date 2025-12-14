@@ -1,18 +1,34 @@
-#!/usr/bin/env python3
 import fontforge
+import math
+import psMat
 
-font = fontforge.open("Myna.sfd")
-font.mergeFeature("Myna.fea")
+def mkFont(name, weight):
+    font = fontforge.open(name + ".sfd")
+    font.mergeFeature("features.fea")
+    font.generate("./fonts/" + name + ".otf")
+    font.generate("./fonts/" + name + ".ttf")
 
-font.generate("fonts/Myna.otf")
-font.generate("fonts/Myna.ttf")
+    font.selection.all()
+    angle = 12
+    font.transform(psMat.skew(angle * math.pi / 180))
 
-if "alt_l" in font:
-    font.selection.select("alt_l")
-    font.copy()
-    font.selection.select("l")
-    font.paste()
+    font.fontname   = name + "Italic"
+    font.familyname = "Myna"
+    font.fullname   = "Myna " + weight + " Italic"
+    font.weight     = weight
 
-font.generate("fonts/Myna-AltL.otf")
-font.generate("fonts/Myna-AltL.ttf")
-font.close()
+    font.italicangle = angle
+
+    font.os2_stylemap |= 0x01
+    panoseL = list(font.os2_panose)
+    panoseL[7] = 1
+    font.os2_panose = tuple(panoseL)
+
+    font.appendSFNTName("English (US)", "SubFamily", "Italic")
+
+    font.generate("./fonts/" + name + "Italic.otf")
+    font.generate("./fonts/" + name + "Italic.ttf")
+    font.close()
+
+mkFont("Myna-Regular", "Regular")
+mkFont("Myna-Bold", "Bold")

@@ -1,0 +1,1 @@
+fontforge -script ~/bin/fontpatcher/font-patcher --complete $1
