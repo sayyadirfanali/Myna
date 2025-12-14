@@ -56,7 +56,7 @@ cp Myna.otf ~/Library/Fonts/
 1. Download the release
 2. Right-click `Myna.otf` and select "Install for all users"
 
-NB: I've added a one-liner script `mknerdfont` to attach NerdFont glyphs into any variant. I've also released the Regular variant with NerdFont. You can use to script to run on any variant/weight to get a NerdFont-compatible version. You'd need `[fontpatcher](https://github.com/ryanoasis/nerd-fonts?tab=readme-ov-file#font-patcher)` installed for `mknerdfont` to work.
+NB: I've added a one-liner script `mknerdfont` to attach NerdFont glyphs into any variant. I've also released the Regular variant with NerdFont. You can use to script to run on any variant/weight to get a NerdFont-compatible version. You'd need [fontpatcher](https://github.com/ryanoasis/nerd-fonts?tab=readme-ov-file#font-patcher) installed for `mknerdfont` to work.
 
 NB: I've also added a script `changeheight.py` to increase/decrease vertical spacing (in response to #9). You can use it if you want more vertical compactness in your terminal.
 
