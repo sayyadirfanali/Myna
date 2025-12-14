@@ -7,13 +7,13 @@
 ![Version](https://img.shields.io/badge/version-2.0.0b-blue.svg?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-OFL-success.svg?style=for-the-badge)
 
-(Myna v2.0.0 Beta) [https://github.com/sayyadirfanali/Myna/releases/tag/v2.0.0.0-beta] is released. It features more bold and (faux) italic variants and even supports APL characters. Please download it and report issues for v2.0.0 full release.
+[Myna v2.0.0 Beta](https://github.com/sayyadirfanali/Myna/releases/tag/v2.0.0.0-beta) is released. It features more bold and (faux) italic variants and even supports APL characters. Please download it and report issues for v2.0.0 full release.
 
 Do you ever feel like your font treats symbols as second-class glyphs? Are you frustrated that `->` looks nothing like an arrow, and `$`, `@`, `%` seem ever mismatched?
 
 Want to experience the beauty of ligatures without losing the simplicity of ASCII and getting tangled in the web of ligature-compatible terminal emulators?
 
-**Myna** ((_Gracula religiosa_)[https://en.wikipedia.org/wiki/Common\_hill\_myna]) is a monospace font which aims to bring harmony to your editor by treating symbols as first-class glyphs alongside alphanumeric characters.
+**Myna** ([_Gracula religiosa_](https://en.wikipedia.org/wiki/Common\_hill\_myna) is a monospace font which aims to bring harmony to your editor by treating symbols as first-class glyphs alongside alphanumeric characters.
 
 NB: Please don't mind the colorscheme in the banner above. I just picked it because it highlighted the most colors in Ray.so. Since the banner contains multiple languages, no single colorscheme could properly highlight them in one image.
 
