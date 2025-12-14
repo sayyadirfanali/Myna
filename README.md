@@ -7,6 +7,8 @@
 ![Version](https://img.shields.io/badge/version-2.0.0b-blue.svg?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-OFL-success.svg?style=for-the-badge)
 
+Myna v2.0.0 Beta is released. It features more bold and (faux) italic variants and even supports APL characters. Please download it and report issues for v2.0.0 full release.
+
 Do you ever feel like your font treats symbols as second-class glyphs? Are you frustrated that `->` looks nothing like an arrow, and `$`, `@`, `%` seem ever mismatched?
 
 Want to experience the beauty of ligatures without losing the simplicity of ASCII and getting tangled in the web of ligature-compatible terminal emulators?
@@ -39,7 +41,7 @@ Myna features Regular, Medium, Bold weight with faux Italic variants for all of 
 ```bash
 git clone https://github.com/sayyadirfanali/Myna.git
 cd ./Myna/fonts
-cp *.otf ~/.local/share/fonts/ # do NOT copy all files (read note above)
+cp *.otf ~/.local/share/fonts/
 fc-cache -v
 ```
 
@@ -47,7 +49,7 @@ fc-cache -v
 ```bash
 git clone https://github.com/sayyadirfanali/Myna.git
 cd Myna
-cp Myna.otf ~/Library/Fonts/ # do NOT copy all files (read note above)
+cp Myna.otf ~/Library/Fonts/
 ```
 
 ### Windows

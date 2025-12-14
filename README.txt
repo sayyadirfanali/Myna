@@ -1,14 +1,14 @@
 # Myna
 
 ## Description
-This package contains the Myna font in several variants: Regular, Medium, Bold (and faux Italic for all of them)
+This package contains the Myna font in several variants: Regular and Bold (and faux Italic for both of them)
 
 ## Installation
 ### Linux
 ```bash
 git clone https://github.com/sayyadirfanali/Myna.git
 cd ./Myna/fonts
-cp *.otf ~/.local/share/fonts/ # do NOT copy all files (read note above)
+cp *.otf ~/.local/share/fonts/
 fc-cache -v
 ```
 
@@ -16,7 +16,7 @@ fc-cache -v
 ```bash
 git clone https://github.com/sayyadirfanali/Myna.git
 cd Myna
-cp Myna.otf ~/Library/Fonts/ # do NOT copy all files (read note above)
+cp Myna.otf ~/Library/Fonts/
 ```
 
 ### Windows
