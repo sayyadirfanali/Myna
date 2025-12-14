@@ -28,6 +28,8 @@ Here are a few of its attractive features that might make it your next favourite
 - **Language-Aware Design**: clean sigils for Perl + elegant operators for Haskell + clear symbols for Rust (and even APL)
 - **Clear Distinction**: no more confusing `1 l I |` or `0 O o`
 
+Below is a comparison of Myna (colored line at bottom) with other popular monospace fonts (the actual list can be found in the script `drawcomp`). It highlights Myna's philosophy of uniform and aligned glyph design so that symbols look natural and editing remains fun.
+
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="images/comp_dark.png">
   <source media="(prefers-color-scheme: light)" srcset="images/comp_light.png">
