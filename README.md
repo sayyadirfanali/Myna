@@ -13,7 +13,7 @@ Do you ever feel like your font treats symbols as second-class glyphs? Are you f
 
 Want to experience the beauty of ligatures without losing the simplicity of ASCII and getting tangled in the web of ligature-compatible terminal emulators?
 
-**Myna 🐦‍⬛** ([_Gracula religiosa_](https://en.wikipedia.org/wiki/Common\_hill\_myna) is a monospace font which aims to bring harmony to your editor by treating symbols as first-class glyphs alongside alphanumeric characters.
+**Myna 🐦‍⬛** ([_Gracula religiosa_](https://en.wikipedia.org/wiki/Common\_hill\_myna)) is a monospace font which aims to bring harmony to your editor by treating symbols as first-class glyphs alongside alphanumeric characters.
 
 NB: Please don't mind the colorscheme in the banner above. I just picked it because it highlighted the most colors in Ray.so. Since the banner contains multiple languages, no single colorscheme could properly highlight them in one image.
 
