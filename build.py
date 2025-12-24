@@ -6,29 +6,44 @@ def mkFont(name, weight):
     font = fontforge.open(name + ".sfd")
     font.mergeFeature("features.fea")
     font.generate("./fonts/" + name + ".otf")
-    font.generate("./fonts/" + name + ".ttf")
-
+    font.generate("./fonts/" + name + ".ttf") 
+    
     font.selection.all()
     angle = 12
     font.transform(psMat.skew(angle * math.pi / 180))
 
-    font.fontname   = name + "Italic"
     font.familyname = "Myna"
-    font.fullname   = "Myna " + weight + " Italic"
     font.weight     = weight
+    font.italicangle = -angle
+    
+    if weight == "Bold":
+        subfamily = "Bold Italic"
+        # 0x01 (Italic) + 0x20 (Bold) = 0x21
+        font.os2_stylemap = 0x21 
+        full_name = "Myna Bold Oblique"
+    else:
+        subfamily = "Italic"
+        font.os2_stylemap = 0x01
+        full_name = "Myna Regular Oblique"
 
-    font.italicangle = angle
+    font.fullname = full_name
+    font.fontname = full_name.replace(" ", "")
 
-    font.os2_stylemap |= 0x01
+    # This is the critical part for app recognition:
+    font.appendSFNTName("English (US)", "SubFamily", subfamily)
+
+    # Preferred Style
+    # font.appendSFNTName("English (US)", "Preferred Style", weight + " Oblique")
+
+    # 7th is Letterform where 9 = Oblique and 2 = Italic
     panoseL = list(font.os2_panose)
-    panoseL[7] = 1
+    panoseL[7] = 9 
     font.os2_panose = tuple(panoseL)
 
-    font.appendSFNTName("English (US)", "SubFamily", "Italic")
-
-    font.generate("./fonts/" + name + "Italic.otf")
-    font.generate("./fonts/" + name + "Italic.ttf")
+    font.generate("./fonts/" + name + "Oblique.otf")
+    font.generate("./fonts/" + name + "Oblique.ttf") 
     font.close()
+
 
 mkFont("Myna-Regular", "Regular")
 mkFont("Myna-Bold", "Bold")
